@@ -1,14 +1,16 @@
 import { links } from '../../data'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 import './nav.css'
 
 const Navbar = () => {
+    const [isNavOpen, setIsNavOpen] = useState(false)
     const navRef = useRef()
 
     const showNavbar = () => {
         navRef.current.classList.toggle('responsive_nav')
+        setIsNavOpen(!isNavOpen)
     }
     return (
         <header>
@@ -23,11 +25,11 @@ const Navbar = () => {
                     )
                 })}
                 <button className='nav-btn nav-close-btn' onClick={showNavbar}>
-                    <FaBars />
+                    <FaTimes />
                 </button>
             </nav>
             <button className='nav-btn' onClick={showNavbar}>
-                <FaTimes />
+                {isNavOpen ? <FaTimes /> : <FaBars />}
             </button>
         </header>
     )
