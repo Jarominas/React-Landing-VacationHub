@@ -12,7 +12,7 @@ const Navbar = () => {
     }
     return (
         <header>
-            <h3>Logo</h3>
+            <h3>Vacation Hub</h3>
             <nav ref={navRef}>
                 {links.map((link) => {
                     const { id, url, text } = link
@@ -22,12 +22,12 @@ const Navbar = () => {
                         </a>
                     )
                 })}
-                <button onClick={showNavbar}>
+                <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaBars />
                 </button>
             </nav>
-            <button>
-                <FaBars />
+            <button className='nav-btn' onClick={showNavbar}>
+                <FaTimes />
             </button>
         </header>
     )
