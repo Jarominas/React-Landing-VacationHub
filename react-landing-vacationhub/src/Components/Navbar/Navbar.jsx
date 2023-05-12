@@ -24,6 +24,10 @@ const Navbar = () => {
                         </a>
                     )
                 })}
+                <div className='login-content'>
+                    <a href=''>Login</a>
+                    <button>Register</button>
+                </div>
                 <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaTimes />
                 </button>

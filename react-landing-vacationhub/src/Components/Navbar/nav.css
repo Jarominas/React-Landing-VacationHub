@@ -1,5 +1,6 @@
 header {
     display: flex;
+
     align-items: center;
     justify-content: space-between;
     height: 5rem;
@@ -7,9 +8,25 @@ header {
     background-color: #ffffff;
     color: #808080;
 }
+header h3 {
+    color: #112b3c;
+    font-weight: 900;
+    position: relative;
+}
+header h3::after {
+    content: '.';
+    display: block;
+    position: absolute;
+
+    font-size: 2rem;
+    color: #e61c5d;
+    top: -69%;
+    left: 43%;
+}
 
 nav a {
     margin: 0 2rem;
+    text-transform: capitalize;
     color: #808080;
     text-decoration: none;
 }
@@ -24,12 +41,24 @@ header .nav-btn {
     background: transparent;
     border: none;
     outline: none;
-    color: #808080;
+    color: #e61c5d;
     visibility: hidden;
     opacity: 0;
 }
+.login-content button {
+    padding: 0.5rem 0.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    background-color: #e61c5d;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+    }
     header .nav-btn {
         visibility: visible;
         opacity: 1;
@@ -37,7 +66,8 @@ header .nav-btn {
 
     header nav {
         position: fixed;
-        top: 5rem;
+
+        top: 0;
         left: 0;
         height: 100%;
         width: 100%;
@@ -62,5 +92,21 @@ header .nav-btn {
 
     nav a {
         font-size: 1.5rem;
+    }
+
+    .login-content {
+        margin-top: 2rem;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    nav {
+        display: flex;
+        align-items: center;
+    }
+    nav a {
+        margin: 0 1rem;
+    }
+    .login-content {
+        margin-left: 5rem;
     }
 }
