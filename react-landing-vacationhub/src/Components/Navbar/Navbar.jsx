@@ -19,7 +19,7 @@ const Navbar = () => {
                 {links.map((link) => {
                     const { id, url, text } = link
                     return (
-                        <a key={id} href={url}>
+                        <a key={id} href={url} className='links'>
                             {text}
                         </a>
                     )

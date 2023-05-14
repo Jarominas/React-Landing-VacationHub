@@ -12,6 +12,7 @@ header h3 {
     color: #112b3c;
     font-weight: 900;
     position: relative;
+    z-index: 3;
 }
 header h3::after {
     content: '.';
@@ -62,11 +63,12 @@ header .nav-btn {
     header .nav-btn {
         visibility: visible;
         opacity: 1;
+        z-index: 3;
     }
 
     header nav {
         position: fixed;
-
+        margin-top: 1rem;
         top: 0;
         left: 0;
         height: 100%;
@@ -79,7 +81,7 @@ header .nav-btn {
         background-color: #ffffff;
         transition: 1s;
         transform: translateY(-100vh);
-        z-index: -1;
+        z-index: 1;
     }
 
     header .responsive_nav {
@@ -105,7 +107,18 @@ header .nav-btn {
     }
     nav a {
         margin: 0 1rem;
+        position: relative;
     }
+    nav .links:hover::before {
+        content: '';
+        position: absolute;
+        left: 30%;
+        bottom: -5px;
+        width: 1rem;
+        height: 0.3rem;
+        background-color: #e61c5d;
+    }
+
     .login-content {
         margin-left: 5rem;
     }

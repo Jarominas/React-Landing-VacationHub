@@ -7,6 +7,13 @@ body {
     font-size: 20px;
     font-weight: 400;
 }
+
+section {
+    max-width: 1145px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 /* Box sizing rules */
 *,
 *::before,
