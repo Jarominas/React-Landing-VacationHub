@@ -1,0 +1,49 @@
+.home {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.home-content {
+    max-width: 570px;
+}
+
+.home h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #112b3c;
+}
+.home span {
+    color: #e61c5d;
+    position: relative;
+}
+.home span::after {
+    content: '';
+    display: block;
+    background-image: url(./circle.svg);
+
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-repeat: no-repeat;
+
+    top: 3%;
+    left: -30%;
+}
+.home .wanted-word {
+    color: #ffbd39;
+}
+.home .wanted-word::after {
+    content: '.';
+    color: black;
+}
+
+.img-large {
+    position: relative;
+}
+
+.img-small {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
