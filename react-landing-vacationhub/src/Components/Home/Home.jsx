@@ -1,6 +1,6 @@
 import './home.css'
 import largeImg from './Home-Img-Large.png'
-import smallImg from './Home-Img-Small.png'
+
 import SearchBar from './SearchBar'
 import CountryData from './Data.json'
 
@@ -21,16 +21,9 @@ const Home = () => {
                 />
             </div>
             <div className='home-images'>
-                <img
-                    className='img-large'
-                    src={largeImg}
-                    alt='home-img-large'
-                />
-                <img
-                    className='img-small'
-                    src={smallImg}
-                    alt='home-img-small'
-                />
+                <div className='img-large'>
+                    <img src={largeImg} alt='home-img-large' />
+                </div>
             </div>
         </section>
     )

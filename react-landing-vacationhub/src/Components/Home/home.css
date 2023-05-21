@@ -2,11 +2,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    grid-template-rows: auto;
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .home-content {
-    max-width: 578px;
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 50vw;
 }
 
 .home h1 {
@@ -49,16 +53,29 @@
 }
 
 .home-images {
-    position: relative;
-    max-height: 500px;
+    grid-column: 2;
+    grid-row: 1;
+    margin-right: 5rem;
+    margin-top: 2rem;
 }
 .img-large {
+    position: relative;
     width: 80%;
+}
+.img-large::after {
+    content: '';
+    display: block;
+    background-image: url(./Home-Img-Small.png);
+
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    top: 52%;
+    left: 70%;
 }
 
 .img-small {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    width: 40%;
 }
