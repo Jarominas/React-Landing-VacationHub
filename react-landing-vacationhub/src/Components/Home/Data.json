@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Tallinn, Estonia",
+        "img": ""
+    },
+    {
+        "id": 2,
+        "name": "Riga, Latvia",
+        "img": ""
+    },
+    {
+        "id": 3,
+        "name": "Helsinki, Finland",
+        "img": ""
+    },
+    {
+        "id": 4,
+        "name": "Stockholm, Sweden",
+        "img": ""
+    },
+    {
+        "id": 5,
+        "name": "Vilnius, Lithuania",
+        "img": ""
+    }
+]
