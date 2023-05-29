@@ -5,10 +5,12 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import Slider from 'react-slick'
 import TourData from './TourCarouselData.json'
+import React from 'react'
 
 function TourCarousel() {
+    const slider = React.useRef(null)
     var settings = {
-        dots: true,
+        dots: false,
         infinite: false,
         speed: 500,
         slidesToShow: 4,
@@ -21,7 +23,7 @@ function TourCarousel() {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true,
+                    dots: false,
                 },
             },
             {
@@ -43,9 +45,24 @@ function TourCarousel() {
     }
     return (
         <div className='carousel-section'>
-            <h2> Responsive </h2>
+            <div className='carousel-content'>
+                <div className='carousel-text'>
+                    <p>Tour Packages</p>
+                    <h2 className='title'>
+                        The amazing places around <span>the world</span>
+                    </h2>
+                </div>
+                <div className='carousel-btn'>
+                    <button onClick={() => slider?.current?.slickPrev()}>
+                        <ArrowBackIosIcon />
+                    </button>
+                    <button onClick={() => slider?.current?.slickNext()}>
+                        <ArrowForwardIosIcon />
+                    </button>
+                </div>
+            </div>
             <div className='carousel-slider'>
-                <Slider {...settings}>
+                <Slider ref={slider} {...settings}>
                     {TourData.map((tour) => {
                         const { id, img, title, name, raiting, price, days } =
                             tour

@@ -1,6 +1,7 @@
 .carousel-section {
-    width: 800px;
+    max-width: 1145px;
     margin: 0 auto;
+    margin-top: 8vw;
 }
 .carousel-slider {
     margin-top: 1rem;
@@ -13,4 +14,26 @@
 }
 .slick-slide div {
     margin: 0 1rem;
+}
+.carousel-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+.carousel-text p {
+    color: #e61c5d;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+.carousel-btn {
+}
+.carousel-btn button {
+    margin: 0 0.5rem;
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+    color: #e61c5d;
+    background: rgba(230, 28, 93, 0.04);
+    border: none;
+    border-radius: 50%;
 }
