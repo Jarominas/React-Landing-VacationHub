@@ -1,8 +1,7 @@
 [
     {
         "id": 1,
-        "img": "img/img-paris",
-
+        "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/TourCarousel/img/img-prague.png",
         "title": "Fall in love among the winding streets and snow-covered",
         "name": "Prague, Czechia",
         "raiting": 4.9,
@@ -11,29 +10,29 @@
     },
     {
         "id": 2,
-        "img": "/img-benjing.png",
-        "title": "Fall in love among the winding streets and snow-covered",
-        "name": "Prague, Czechia",
+        "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/TourCarousel/img/img-benjing.png",
+        "title": "History is not about the past but a map of the past",
+        "name": "Beijing, China",
         "raiting": 4.9,
-        "price": "$250",
-        "days": "10 days tour"
+        "price": "$450",
+        "days": "5 days tour"
     },
     {
         "id": 3,
-        "img": "/img-prague.png",
-        "title": "Fall in love among the winding streets and snow-covered",
-        "name": "Prague, Czechia",
+        "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/TourCarousel/img/img-istambul.png",
+        "title": "The unique character as a symbol of taste and ostentation",
+        "name": "İstanbul, Turkey",
         "raiting": 4.9,
-        "price": "$300",
-        "days": "10 days tour"
+        "price": "$150",
+        "days": "7 days tour"
     },
     {
         "id": 4,
         "img": "/img-benjing.png",
-        "title": "Fall in love among the winding streets and snow-covered",
-        "name": "Prague, Czechia",
+        "title": "You don't want to pitch a tent and live inside the Louvre",
+        "name": "Paris, France",
         "raiting": 4.9,
-        "price": "$500",
+        "price": "$100",
         "days": "10 days tour"
     }
 ]
