@@ -1,7 +1,6 @@
 .carousel-section {
     max-width: 1145px;
     margin: 0 auto;
-    margin-top: 8vw;
 }
 .carousel-slider {
     margin-top: 1rem;
@@ -38,6 +37,7 @@
     background: rgba(230, 28, 93, 0.04);
     border: none;
     border-radius: 50%;
+    cursor: pointer;
 }
 .box-content {
     padding: 1rem;

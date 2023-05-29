@@ -19,6 +19,7 @@ function TourCarousel() {
         initialSlide: 0,
         variableWidth: true,
         adaptiveHeight: true,
+        arrows: false,
         responsive: [
             {
                 breakpoint: 1024,
