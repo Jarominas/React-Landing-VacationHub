@@ -9,9 +9,12 @@
 .carousel-box {
     background-color: #ffffff;
     display: flex;
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
+    border-radius: 16px 16px 0px 0px;
+    cursor: pointer;
 }
 
-.slick-slide div {
+.slick-slide div:first-child {
     margin: 0 1rem;
 }
 .carousel-content {
@@ -24,15 +27,33 @@
     font-size: 1.5vw;
     font-weight: 700;
 }
-.carousel-btn {
-}
+
 .carousel-btn button {
     margin: 0 0.5rem;
-    padding: 12px;
+    padding-left: 5px;
+    padding-top: 5px;
     width: 48px;
     height: 48px;
     color: #e61c5d;
     background: rgba(230, 28, 93, 0.04);
     border: none;
     border-radius: 50%;
+}
+.box-content {
+    padding: 1rem;
+}
+.box-content p {
+    font-size: 14px;
+}
+.box-content h3 {
+    color: #e61c5d;
+}
+.box-content > * + * {
+    margin-top: 8px;
+}
+.box-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
 }
