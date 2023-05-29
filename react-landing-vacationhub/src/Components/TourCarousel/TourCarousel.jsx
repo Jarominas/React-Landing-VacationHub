@@ -10,18 +10,21 @@ import React from 'react'
 function TourCarousel() {
     const slider = React.useRef(null)
     var settings = {
+        className: 'slider variable-width',
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 3,
+        slidesToScroll: 1,
         initialSlide: 0,
+        variableWidth: true,
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: false,
                 },
@@ -30,7 +33,7 @@ function TourCarousel() {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                     initialSlide: 2,
                 },
             },
@@ -67,8 +70,21 @@ function TourCarousel() {
                         const { id, img, title, name, raiting, price, days } =
                             tour
                         return (
-                            <div key={id} className='carousel-box'>
-                                <h3>{price}</h3>
+                            <div
+                                style={{ width: 350 }}
+                                key={id}
+                                className='carousel-box'
+                            >
+                                <img src={img} alt={name} />
+                                <div className='box-content'>
+                                    <h4>{title}</h4>
+                                    <p>{name}</p>
+                                    <img src={raiting} alt={name} />
+                                    <div className='box-footer'>
+                                        <h3>{price}</h3>
+                                        <p>{days}</p>
+                                    </div>
+                                </div>
                             </div>
                         )
                     })}

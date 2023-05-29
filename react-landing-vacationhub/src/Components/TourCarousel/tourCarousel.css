@@ -7,11 +7,10 @@
     margin-top: 1rem;
 }
 .carousel-box {
-    background-color: aqua;
+    background-color: #ffffff;
     display: flex;
-    height: 500px;
-    width: 300px;
 }
+
 .slick-slide div {
     margin: 0 1rem;
 }

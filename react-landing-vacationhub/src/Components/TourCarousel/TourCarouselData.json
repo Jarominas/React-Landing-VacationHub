@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "img": "./img/img-prague",
+        "img": "img/img-paris",
+
         "title": "Fall in love among the winding streets and snow-covered",
         "name": "Prague, Czechia",
         "raiting": 4.9,
@@ -10,7 +11,7 @@
     },
     {
         "id": 2,
-        "img": "./img/img-benjing",
+        "img": "/img-benjing.png",
         "title": "Fall in love among the winding streets and snow-covered",
         "name": "Prague, Czechia",
         "raiting": 4.9,
@@ -19,7 +20,7 @@
     },
     {
         "id": 3,
-        "img": "./img/img-benjing",
+        "img": "/img-prague.png",
         "title": "Fall in love among the winding streets and snow-covered",
         "name": "Prague, Czechia",
         "raiting": 4.9,
@@ -28,7 +29,7 @@
     },
     {
         "id": 4,
-        "img": "./img/img-benjing",
+        "img": "/img-benjing.png",
         "title": "Fall in love among the winding streets and snow-covered",
         "name": "Prague, Czechia",
         "raiting": 4.9,
