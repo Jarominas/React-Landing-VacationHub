@@ -1,0 +1,16 @@
+.carousel-section {
+    width: 800px;
+    margin: 0 auto;
+}
+.carousel-slider {
+    margin-top: 1rem;
+}
+.carousel-box {
+    background-color: aqua;
+    display: flex;
+    height: 500px;
+    width: 300px;
+}
+.slick-slide div {
+    margin: 0 1rem;
+}

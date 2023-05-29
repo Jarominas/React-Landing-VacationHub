@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "img": "./img/img-prague",
+        "title": "Fall in love among the winding streets and snow-covered",
+        "name": "Prague, Czechia",
+        "raiting": 4.9,
+        "price": "$200",
+        "days": "10 days tour"
+    },
+    {
+        "id": 2,
+        "img": "./img/img-benjing",
+        "title": "Fall in love among the winding streets and snow-covered",
+        "name": "Prague, Czechia",
+        "raiting": 4.9,
+        "price": "$250",
+        "days": "10 days tour"
+    },
+    {
+        "id": 3,
+        "img": "./img/img-benjing",
+        "title": "Fall in love among the winding streets and snow-covered",
+        "name": "Prague, Czechia",
+        "raiting": 4.9,
+        "price": "$300",
+        "days": "10 days tour"
+    },
+    {
+        "id": 4,
+        "img": "./img/img-benjing",
+        "title": "Fall in love among the winding streets and snow-covered",
+        "name": "Prague, Czechia",
+        "raiting": 4.9,
+        "price": "$500",
+        "days": "10 days tour"
+    }
+]

@@ -21,25 +21,41 @@ const About = () => {
                 <div className='numbers-content'>
                     <div className='number-one'>
                         <div className='number'>
-                            <CountUp start={10} end={15} duration={5} />
+                            <CountUp
+                                enableScrollSpy
+                                start={10}
+                                end={15}
+                                duration={5}
+                            />
                         </div>
                         <p className='number-text'>Years of Experience</p>
                     </div>
                     <div className='number-two'>
                         <div className='number'>
-                            <CountUp start={990} end={1000} duration={5} />
+                            <CountUp
+                                enableScrollSpy
+                                start={990}
+                                end={1000}
+                                duration={5}
+                            />
                         </div>
                         <p className='number-text'>Sucessful Trips</p>
                     </div>
                     <div className='number-three'>
                         <div className='number'>
-                            <CountUp end={20} suffix='K' duration={5} />
+                            <CountUp
+                                enableScrollSpy
+                                end={20}
+                                suffix='K'
+                                duration={5}
+                            />
                         </div>
                         <p className='number-text'>Happy Customers</p>
                     </div>
                     <div className='number-four'>
                         <div className='number'>
                             <CountUp
+                                enableScrollSpy
                                 start={4}
                                 end={4.8}
                                 decimals={1}
