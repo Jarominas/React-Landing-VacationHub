@@ -34,14 +34,5 @@
         "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/f194e8fd1803da7fa70d04eb6757c36070d26fae/react-landing-vacationhub/src/Components/TourCarousel/img/raiting.png",
         "price": "$100",
         "days": "10 days tour"
-    },
-    {
-        "id": 5,
-        "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/f194e8fd1803da7fa70d04eb6757c36070d26fae/react-landing-vacationhub/src/Components/TourCarousel/img/img-paris.png",
-        "title": "You don't want to pitch a tent and live inside the Louvre",
-        "name": "Paris, France",
-        "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/f194e8fd1803da7fa70d04eb6757c36070d26fae/react-landing-vacationhub/src/Components/TourCarousel/img/raiting.png",
-        "price": "$50000",
-        "days": "10 days tour"
     }
 ]

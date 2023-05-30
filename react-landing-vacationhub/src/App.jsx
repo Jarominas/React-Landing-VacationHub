@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar/Navbar'
 import About from './Components/About/About'
 import './app.css'
 import TourCarousel from './Components/TourCarousel/TourCarousel'
+import Testimonial from './Components/Testimonial/Testimonial'
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <Home />
             <About />
             <TourCarousel />
+            <Testimonial />
         </>
     )
 }

@@ -1,26 +1,26 @@
 [
     {
         "id": 1,
-        "img": "",
+        "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/Testimonial/img/person-1.png",
         "name": "Eleanor Pena",
         "position": "UI/UX Designer",
-        "raiting": "",
+        "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/Testimonial/img/stars.png",
         "text": "Customer testimonials are more effective than paid marketing copy as they take the spotlight away from the seller to shine it on the customers. "
     },
     {
         "id": 2,
-        "img": "",
+        "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/Testimonial/img/person-2.png",
         "name": "Theresa Webb",
         "position": "Vlogger",
-        "raiting": "",
+        "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/Testimonial/img/stars.png",
         "text": "In promotion and advertising, a testimonial or show consists of a person's written statement extolling the virtue of a product."
     },
     {
         "id": 3,
-        "img": "",
+        "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/Testimonial/img/person-3.png",
         "name": "Annette Black",
         "position": "Doctor",
-        "raiting": "",
+        "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/Testimonial/img/stars.png",
         "text": "Testimonials work because they aren''t strong sales pitches, they come across in an unbiased voice and establish trust"
     }
 ]

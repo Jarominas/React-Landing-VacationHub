@@ -19,7 +19,7 @@ const Testimonial = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
-        variableWidth: true,
+        adaptiveWidth: true,
         adaptiveHeight: true,
         arrows: false,
         responsive: [
@@ -35,9 +35,9 @@ const Testimonial = () => {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
-                    initialSlide: 2,
+                    initialSlide: 1,
                 },
             },
             {
@@ -49,7 +49,46 @@ const Testimonial = () => {
             },
         ],
     }
-    return <div>Testimonial</div>
+    return (
+        <div className='testimonial-section' style={{}}>
+            <div className='testimonial-text'>
+                <p>Testimonial</p>
+                <h2 className='title'>
+                    Satisfied <span>travellers</span> around the world
+                </h2>
+            </div>
+
+            <div className='carousel-slider'>
+                <Slider ref={slider} {...settings}>
+                    {TestimonialData.map((testimonial) => {
+                        const { id, img, name, position, raiting, text } =
+                            testimonial
+                        return (
+                            <div key={id} className='testimonial-box'>
+                                <img src={img} alt={name} />
+                                <h4>{name}</h4>
+                                <p>{position}</p>
+                                <img src={raiting} alt={name} />
+                                <p>{text}</p>
+                            </div>
+                        )
+                    })}
+                </Slider>
+                <button
+                    className='testimonial-prevBtn'
+                    onClick={() => slider?.current?.slickPrev()}
+                >
+                    <ArrowBackIosIcon />
+                </button>
+                <button
+                    className='testimonial-nextBtn'
+                    onClick={() => slider?.current?.slickNext()}
+                >
+                    <ArrowForwardIosIcon />
+                </button>
+            </div>
+        </div>
+    )
 }
 
 export default Testimonial
