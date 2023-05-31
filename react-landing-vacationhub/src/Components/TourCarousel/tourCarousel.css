@@ -13,12 +13,6 @@
     cursor: pointer;
 }
 
-/* .slick-slide div:first-child {
-    margin: 0 1rem;
-} */
-/* .slick-slide {
-    margin: 0 0.8rem;
-} */
 .carousel-content {
     display: grid;
     grid-template-columns: 1fr 1fr;

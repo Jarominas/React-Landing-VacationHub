@@ -4,6 +4,7 @@ import About from './Components/About/About'
 import './app.css'
 import TourCarousel from './Components/TourCarousel/TourCarousel'
 import Testimonial from './Components/Testimonial/Testimonial'
+import AllTours from './Components/AllTours/AllTours'
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <About />
             <TourCarousel />
             <Testimonial />
+            <AllTours />
         </>
     )
 }
