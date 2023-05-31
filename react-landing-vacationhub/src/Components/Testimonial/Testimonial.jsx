@@ -1,6 +1,6 @@
-import './testimonial.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import './testimonial.css'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote'
@@ -26,7 +26,7 @@ const Testimonial = () => {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
                     dots: false,
@@ -58,22 +58,24 @@ const Testimonial = () => {
                 </h2>
             </div>
 
-            <div className='carousel-slider'>
-                <Slider ref={slider} {...settings}>
-                    {TestimonialData.map((testimonial) => {
-                        const { id, img, name, position, raiting, text } =
-                            testimonial
-                        return (
-                            <div key={id} className='testimonial-box'>
-                                <img src={img} alt={name} />
-                                <h4>{name}</h4>
-                                <p>{position}</p>
-                                <img src={raiting} alt={name} />
-                                <p>{text}</p>
-                            </div>
-                        )
-                    })}
-                </Slider>
+            <div className='testimonial-slider'>
+                <div className='slider-content'>
+                    <Slider ref={slider} {...settings}>
+                        {TestimonialData.map((testimonial) => {
+                            const { id, img, name, position, raiting, text } =
+                                testimonial
+                            return (
+                                <div key={id} className='testimonial-box'>
+                                    <img src={img} alt={name} />
+                                    <h4>{name}</h4>
+                                    <p>{position}</p>
+                                    <img src={raiting} alt={name} />
+                                    <p>{text}</p>
+                                </div>
+                            )
+                        })}
+                    </Slider>
+                </div>
                 <button
                     className='testimonial-prevBtn'
                     onClick={() => slider?.current?.slickPrev()}

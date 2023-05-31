@@ -22,5 +22,21 @@
         "position": "Doctor",
         "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/Testimonial/img/stars.png",
         "text": "Testimonials work because they aren''t strong sales pitches, they come across in an unbiased voice and establish trust"
+    },
+    {
+        "id": 4,
+        "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/Testimonial/img/person-2.png",
+        "name": "Theresa Webb",
+        "position": "Vlogger",
+        "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/Testimonial/img/stars.png",
+        "text": "In promotion and advertising, a testimonial or show consists of a person's written statement extolling the virtue of a product."
+    },
+    {
+        "id": 5,
+        "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/Testimonial/img/person-3.png",
+        "name": "Annette Black",
+        "position": "Doctor",
+        "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/Testimonial/img/stars.png",
+        "text": "Testimonials work because they aren''t strong sales pitches, they come across in an unbiased voice and establish trust"
     }
 ]

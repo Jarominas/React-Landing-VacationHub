@@ -7,8 +7,17 @@
     display: block;
     margin: 0 auto;
     width: 80px;
-    height: 80;
+
     border-radius: 50%;
+}
+.testimonial-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider-content {
+    width: 70%;
+    margin: 0 auto;
 }
 .testimonial-text {
     max-width: 40vw;
@@ -22,16 +31,22 @@
     font-size: 1.5vw;
     font-weight: 700;
 }
+.slick-slide div:first-child {
+    box-shadow: none;
+    margin: 0 1rem;
+}
 .testimonial-box {
     background-color: #ffffff;
-    display: flex;
+    display: inline-block;
+
     text-align: center;
-    min-height: 350px;
+    height: 350px;
+    min-width: 33%;
 
     box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
     border-radius: 16px;
     cursor: pointer;
-    padding: 3rem;
+    padding: 2rem;
 }
 .testimonial-box p {
     font-size: 14px;
@@ -39,10 +54,11 @@
 .testimonial-box > * + * {
     margin-top: 8px;
 }
-.carousel-slider {
-    position: relative;
-}
+
 .testimonial-prevBtn {
+    position: absolute;
+    top: 50%;
+    left: 0;
     margin: 0 auto;
     margin-top: 1rem;
     padding-left: 5px;
@@ -57,6 +73,9 @@
     z-index: 1;
 }
 .testimonial-nextBtn {
+    position: absolute;
+    top: 50%;
+    right: 0;
     margin: 0 auto;
     margin-top: 1rem;
     padding-left: 5px;
