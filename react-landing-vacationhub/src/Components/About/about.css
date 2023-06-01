@@ -3,9 +3,10 @@
       grid-template-columns: 1fr 1fr;
       grid-gap: 8rem;
       margin-top: 5rem;
+      min-height: 400px;
 }
 .about-images {
-      position: relative;
+      position: static;
 }
 .about-images::after {
       content: '';
@@ -71,4 +72,12 @@
 }
 .number-four {
       padding-left: 0.5rem;
+}
+@media screen and (max-width: 492px) {
+      .number {
+            font-size: 1.8rem;
+      }
+      .number-text {
+            font-size: 13px;
+      }
 }

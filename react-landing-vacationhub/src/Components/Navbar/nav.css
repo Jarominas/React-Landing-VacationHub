@@ -1,125 +1,125 @@
 header {
-    display: flex;
+      display: flex;
 
-    align-items: center;
-    justify-content: space-between;
-    height: 5rem;
-    padding: 0 2rem;
-    background-color: #ffffff;
-    color: #808080;
+      align-items: center;
+      justify-content: space-between;
+      height: 5rem;
+      padding: 0 2rem;
+      background-color: #ffffff;
+      color: #808080;
 }
 header h3 {
-    color: #112b3c;
-    font-weight: 900;
-    position: relative;
-    z-index: 3;
+      color: #112b3c;
+      font-weight: 900;
+      position: relative;
+      z-index: 3;
 }
 header h3::after {
-    content: '.';
-    display: block;
-    position: absolute;
+      content: '.';
+      display: block;
+      position: absolute;
 
-    font-size: 2rem;
-    color: #e61c5d;
-    top: -69%;
-    left: 43%;
+      font-size: 2rem;
+      color: #e61c5d;
+      top: -69%;
+      left: 43%;
 }
 
 nav a {
-    margin: 0 2rem;
-    text-transform: capitalize;
-    color: #808080;
-    text-decoration: none;
+      margin: 0 2rem;
+      text-transform: capitalize;
+      color: #808080;
+      text-decoration: none;
 }
 
 nav a:hover {
-    color: black;
+      color: black;
 }
 
 header .nav-btn {
-    padding: 0.5rem;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #e61c5d;
-    visibility: hidden;
-    opacity: 0;
+      padding: 0.5rem;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #e61c5d;
+      visibility: hidden;
+      opacity: 0;
 }
 .login-content button {
-    padding: 0.5rem 0.5rem;
-    color: #ffffff;
-    font-weight: 700;
-    border: none;
-    background-color: #e61c5d;
-    border-radius: 0.5rem;
-    cursor: pointer;
+      padding: 0.5rem 0.5rem;
+      color: #ffffff;
+      font-weight: 700;
+      border: none;
+      background-color: #e61c5d;
+      border-radius: 0.5rem;
+      cursor: pointer;
 }
 
 @media only screen and (max-width: 1024px) {
-    header {
-        flex-direction: row;
-    }
-    header .nav-btn {
-        visibility: visible;
-        opacity: 1;
-        z-index: 3;
-    }
+      header {
+            flex-direction: row;
+      }
+      header .nav-btn {
+            visibility: visible;
+            opacity: 1;
+            z-index: 3;
+      }
 
-    header nav {
-        position: fixed;
-        margin-top: 1rem;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
-        background-color: #ffffff;
-        transition: 1s;
-        transform: translateY(-100vh);
-        z-index: 1;
-    }
+      header nav {
+            position: fixed;
+            margin-top: 1rem;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            background-color: #ffffff;
+            transition: 1s;
+            transform: translateY(-100vh);
+            z-index: 1;
+      }
 
-    header .responsive_nav {
-        transform: none;
-    }
+      header .responsive_nav {
+            transform: none;
+      }
 
-    nav .nav-close-btn {
-        display: none;
-    }
+      nav .nav-close-btn {
+            display: none;
+      }
 
-    nav a {
-        font-size: 1.5rem;
-    }
+      nav a {
+            font-size: 1.5rem;
+      }
 
-    .login-content {
-        margin-top: 2rem;
-    }
+      .login-content {
+            margin-top: 2rem;
+      }
 }
 @media only screen and (min-width: 1025px) {
-    nav {
-        display: flex;
-        align-items: center;
-    }
-    nav a {
-        margin: 0 1rem;
-        position: relative;
-    }
-    nav .links:hover::before {
-        content: '';
-        position: absolute;
-        left: 30%;
-        bottom: -5px;
-        width: 1rem;
-        height: 0.3rem;
-        background-color: #e61c5d;
-    }
+      nav {
+            display: flex;
+            align-items: center;
+      }
+      nav a {
+            margin: 0 1rem;
+            position: relative;
+      }
+      nav .links:hover::before {
+            content: '';
+            position: absolute;
+            left: 30%;
+            bottom: -5px;
+            width: 1rem;
+            height: 0.3rem;
+            background-color: #e61c5d;
+      }
 
-    .login-content {
-        margin-left: 5rem;
-    }
+      .login-content {
+            margin-left: 5rem;
+      }
 }
