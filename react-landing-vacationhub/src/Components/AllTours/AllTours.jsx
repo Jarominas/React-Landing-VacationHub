@@ -38,7 +38,13 @@ export const Button = styled.button`
 const ImageWrapper = styled.div`
       display: flex;
       justify-content: space-between;
+
       align-items: flex-end;
+      @media screen and (max-width: 1024px) {
+            .smallCard {
+                  display: none;
+            }
+      }
 `
 
 const TourCard = styled.div`
@@ -77,13 +83,14 @@ const AllTours = () => {
       return (
             <Section>
                   <Title>
-                        We can do anything we want to if <span>we stick</span>{' '}
+                        We can do anything we want to if <span>we stick</span>
                         to it long enough.
                   </Title>
                   <p>Do what you can, with what you have, where you are.</p>
                   <Button>See all tours</Button>
                   <ImageWrapper>
                         <TourCard
+                              className='bigCard'
                               style={{
                                     width: '254px',
                                     height: '290px',
@@ -105,7 +112,10 @@ const AllTours = () => {
                                     <p>7 days tour</p>
                               </div>
                         </TourCard>
-                        <TourCard style={{ width: '190px', height: '217px' }}>
+                        <TourCard
+                              className='smallCard'
+                              style={{ width: '190px', height: '217px' }}
+                        >
                               <img
                                     src={paris1}
                                     alt=''
@@ -130,7 +140,10 @@ const AllTours = () => {
                                     </p>
                               </div>
                         </TourCard>
-                        <TourCard style={{ width: '190px', height: '217px' }}>
+                        <TourCard
+                              className='smallCard'
+                              style={{ width: '190px', height: '217px' }}
+                        >
                               <img
                                     src={paris2}
                                     alt=''
@@ -156,6 +169,7 @@ const AllTours = () => {
                               </div>
                         </TourCard>
                         <TourCard
+                              className='bigCard'
                               style={{
                                     width: '254px',
                                     height: '290px',
