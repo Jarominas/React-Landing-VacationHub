@@ -38,10 +38,17 @@ export const Button = styled.button`
 const ImageWrapper = styled.div`
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
 
+      justify-content: center;
       align-items: flex-end;
       @media screen and (max-width: 1024px) {
             .smallCard {
+                  display: none;
+            }
+      }
+      @media screen and (max-width: 645px) {
+            .bigCardRight {
                   display: none;
             }
       }
@@ -52,6 +59,8 @@ const TourCard = styled.div`
       flex-direction: column;
       justify-content: space-between;
       margin: 0 1rem;
+      margin-top: 2em;
+      margin-bottom: 5em;
       padding: 10px;
       background-color: #fff;
       box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
@@ -78,6 +87,10 @@ const TourCard = styled.div`
       p {
             color: #808080;
       }
+      @media screen and (max-width: 645px) {
+            width: 100%;
+            margin-bottom: 10px;
+      }
 `
 const AllTours = () => {
       return (
@@ -90,7 +103,7 @@ const AllTours = () => {
                   <Button>See all tours</Button>
                   <ImageWrapper>
                         <TourCard
-                              className='bigCard'
+                              className='bigCardLeft'
                               style={{
                                     width: '254px',
                                     height: '290px',
@@ -169,7 +182,7 @@ const AllTours = () => {
                               </div>
                         </TourCard>
                         <TourCard
-                              className='bigCard'
+                              className='bigCardRight'
                               style={{
                                     width: '254px',
                                     height: '290px',

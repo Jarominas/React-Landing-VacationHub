@@ -1,55 +1,74 @@
 .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 8rem;
-    margin-top: 5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 8rem;
+      margin-top: 5rem;
 }
 .about-images {
-    position: relative;
+      position: relative;
 }
 .about-images::after {
-    content: '';
-    display: block;
-    background-image: url(./Small-pic.png);
+      content: '';
+      display: block;
+      background-image: url(./Small-pic.png);
 
-    position: absolute;
-    width: 40%;
-    height: 40%;
-    background-size: contain;
-    background-repeat: no-repeat;
+      position: absolute;
+      width: 40%;
+      height: 40%;
+      background-size: contain;
+      background-repeat: no-repeat;
 
-    top: 45%;
-    left: 56%;
+      top: 45%;
+      left: 56%;
 }
 .about-us {
-    color: #e61c5d;
-    font-size: 1.5vw;
-    font-weight: 700;
+      color: #e61c5d;
+      font-size: 1.5rem;
+      font-weight: 700;
 }
 .title {
-    font-size: 2.5vw;
-    line-height: 3vw;
-    margin-bottom: 1vw;
+      font-size: 2vw;
+      line-height: 3rem;
+      margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+      .title {
+            font-size: 2rem;
+      }
+      .about-images {
+            display: none;
+      }
+      .about {
+            display: block;
+            margin-top: 3rem;
+      }
+}
+@media screen and (max-width: 692px) {
+      .title {
+            font-size: 1.5rem;
+            line-height: 2rem;
+      }
 }
 .title span {
-    color: #e61c5d;
+      color: #e61c5d;
 }
 .about-text {
-    font-size: 1.3vw;
-    margin-bottom: 1vw;
+      font-size: 1.3vw;
+      margin-bottom: 1vw;
 }
 .numbers-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 1.5rem;
 }
 .number {
-    color: #e61c5d;
-    font-size: 2.5rem;
-    font-weight: 700;
+      color: #e61c5d;
+      font-size: 2.5rem;
+      font-weight: 700;
 }
 .number-three {
 }
 .number-four {
-    padding-left: 0.5rem;
+      padding-left: 0.5rem;
 }
