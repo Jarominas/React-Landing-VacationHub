@@ -8,20 +8,14 @@ import YouTubeIcon from '@mui/icons-material/YouTube'
 const FooterContainer = styled.footer`
       display: flex;
       justify-content: space-between;
-      margin-top: 1em;
+
       h3 {
             font-size: 1em;
       }
       p {
             font-size: 16px;
-            margin-bottom: 0.5em;
-      }
-
-      * {
-            margin-bottom: 1em;
-      }
-      div {
-            margin: 0 0.3rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
       }
 
       @media screen and (max-width: 1024px) {
@@ -29,7 +23,7 @@ const FooterContainer = styled.footer`
                   font-size: 13px;
             }
       }
-      @media screen and (max-width: 645px) {
+      @media screen and (max-width: 792px) {
             .footer-about {
                   display: none;
             }
@@ -45,9 +39,6 @@ const Adress = styled.div`
       width: 200px;
 
       text-align: left;
-      * {
-            margin-bottom: 1rem;
-      }
 `
 const InputContainer = styled.div`
       position: relative;
@@ -61,8 +52,8 @@ const SearchInput = styled.input`
 `
 const SearchIcon = styled.span`
       position: absolute;
-      top: 50%;
-      right: 10px;
+      top: 63%;
+      right: 15px;
 
       transform: translateY(-75%);
       background-image: url('https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/Footer/send-btn.png');
@@ -89,7 +80,11 @@ const Footer = () => {
             <section>
                   <FooterContainer>
                         <Adress>
-                              <Logo style={{ fontSize: '1.2em' }}>
+                              <Logo
+                                    style={{
+                                          fontSize: '1.2rem',
+                                    }}
+                              >
                                     Vacation Hub
                               </Logo>
                               <p style={{ fontSize: '14px' }}>

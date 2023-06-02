@@ -16,12 +16,16 @@ const Section = styled.section`
       }
 `
 const Title = styled.h2`
-      font-size: 2.5vw;
-      line-height: 3vw;
+      font-size: 3rem;
+      line-height: 3rem;
       margin-bottom: 1vw;
 
       span {
             color: var(--primary-color);
+      }
+      @media screen and (max-width: 692px) {
+            font-size: 2rem;
+            line-height: 2.2rem;
       }
 `
 
@@ -33,6 +37,10 @@ export const Button = styled.button`
       background-color: #e61c5d;
       border-radius: 0.5rem;
       cursor: pointer;
+      @media screen and (max-width: 692px) {
+            margin-bottom: 3rem;
+            margin-top: 2rem;
+      }
 `
 
 const ImageWrapper = styled.div`
@@ -42,12 +50,14 @@ const ImageWrapper = styled.div`
 
       justify-content: center;
       align-items: flex-end;
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1080px) {
             .smallCard {
                   display: none;
             }
       }
       @media screen and (max-width: 645px) {
+            display: none;
+
             .bigCardRight {
                   display: none;
             }

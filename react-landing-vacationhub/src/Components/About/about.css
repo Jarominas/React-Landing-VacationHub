@@ -4,9 +4,17 @@
       grid-gap: 8rem;
       margin-top: 5rem;
       min-height: 400px;
+      margin-bottom: 10rem;
 }
 .about-images {
-      position: static;
+      position: relative;
+      width: 80%;
+      height: auto;
+}
+.about-images img {
+      max-width: 100%;
+      display: block;
+      margin-bottom: 2rem;
 }
 .about-images::after {
       content: '';
@@ -14,13 +22,12 @@
       background-image: url(./Small-pic.png);
 
       position: absolute;
-      width: 40%;
-      height: 40%;
+      width: 69%;
+      height: 57%;
       background-size: contain;
       background-repeat: no-repeat;
-
-      top: 45%;
-      left: 56%;
+      top: 44%;
+      left: 64%;
 }
 .about-us {
       color: #e61c5d;
@@ -28,9 +35,40 @@
       font-weight: 700;
 }
 .title {
-      font-size: 2vw;
+      font-size: 3rem;
       line-height: 3rem;
       margin-bottom: 1rem;
+}
+
+.title span {
+      color: #e61c5d;
+}
+.about-text {
+      font-size: 1.5rem;
+      margin-bottom: 1vw;
+}
+.numbers-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 1.5rem;
+      margin-top: 3rem;
+}
+.number {
+      color: #e61c5d;
+      font-size: 2.5rem;
+      font-weight: 700;
+}
+
+.number-four {
+      padding-left: 0.5rem;
+}
+@media screen and (max-width: 492px) {
+      .number {
+            font-size: 1.8rem;
+      }
+      .number-text {
+            font-size: 13px;
+      }
 }
 
 @media screen and (max-width: 1024px) {
@@ -46,38 +84,16 @@
       }
 }
 @media screen and (max-width: 692px) {
+      .about {
+            margin-bottom: 1rem;
+      }
       .title {
-            font-size: 1.5rem;
+            font-size: 2rem;
             line-height: 2rem;
       }
-}
-.title span {
-      color: #e61c5d;
-}
-.about-text {
-      font-size: 1.3vw;
-      margin-bottom: 1vw;
-}
-.numbers-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 1.5rem;
-}
-.number {
-      color: #e61c5d;
-      font-size: 2.5rem;
-      font-weight: 700;
-}
-.number-three {
-}
-.number-four {
-      padding-left: 0.5rem;
-}
-@media screen and (max-width: 492px) {
-      .number {
-            font-size: 1.8rem;
-      }
-      .number-text {
-            font-size: 13px;
+      .about-text {
+            font-size: 0.9rem;
+            margin-bottom: 1vw;
+            margin-bottom: 1rem;
       }
 }
