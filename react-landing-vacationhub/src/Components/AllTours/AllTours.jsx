@@ -10,7 +10,7 @@ import { fromRightAnimation } from '../Home/Home'
 
 const fromBottomAnimation = {
       hidden: {
-            y: 200,
+            y: 100,
             opacity: 0,
       },
       visible: (custom) => ({

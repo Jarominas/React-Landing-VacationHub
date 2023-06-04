@@ -22,7 +22,7 @@ export const textAnimation = {
 
 export const fromRightAnimation = {
       hidden: {
-            x: 200,
+            x: 100,
             opacity: 0,
       },
       visible: (custom) => ({
