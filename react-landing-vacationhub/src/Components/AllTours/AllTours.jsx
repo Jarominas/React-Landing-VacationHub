@@ -4,8 +4,26 @@ import amsterdam from './img/amsterdam.png'
 import paris1 from './img/paris1.png'
 import paris2 from './img/paris2.png'
 import portugal from './img/portugal.png'
+import { motion } from 'framer-motion'
+import { textAnimation } from '../Home/Home'
+import { fromRightAnimation } from '../Home/Home'
 
-const Section = styled.section`
+const fromBottomAnimation = {
+      hidden: {
+            y: 200,
+            opacity: 0,
+      },
+      visible: (custom) => ({
+            y: 0,
+            opacity: 1,
+            transition: {
+                  duration: 1.5,
+                  delay: custom * 0.5,
+            },
+      }),
+}
+
+const Section = styled(motion.section)`
       max-width: 1145px;
       margin: 0 auto;
       margin-top: 5em;
@@ -15,7 +33,7 @@ const Section = styled.section`
             margin-bottom: 1em;
       }
 `
-const Title = styled.h2`
+const Title = styled(motion.h2)`
       font-size: 3rem;
       line-height: 3rem;
       margin-bottom: 1vw;
@@ -29,7 +47,7 @@ const Title = styled.h2`
       }
 `
 
-export const Button = styled.button`
+export const Button = styled(motion.button)`
       padding: 0.5rem 0.5rem;
       color: #ffffff;
       font-weight: 700;
@@ -43,7 +61,7 @@ export const Button = styled.button`
       }
 `
 
-const ImageWrapper = styled.div`
+const ImageWrapper = styled(motion.div)`
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -104,14 +122,22 @@ const TourCard = styled.div`
 `
 const AllTours = () => {
       return (
-            <Section>
-                  <Title>
+            <Section as={motion.section} initial='hidden' whileInView='visible'>
+                  <Title as={motion.h2} variants={textAnimation}>
                         We can do anything we want to if <span>we stick</span>
                         to it long enough.
                   </Title>
-                  <p>Do what you can, with what you have, where you are.</p>
-                  <Button>See all tours</Button>
-                  <ImageWrapper>
+                  <motion.p variants={textAnimation} custom={2}>
+                        Do what you can, with what you have, where you are.
+                  </motion.p>
+                  <Button as={motion.button} variants={fromBottomAnimation}>
+                        See all tours
+                  </Button>
+                  <ImageWrapper
+                        as={motion.div}
+                        variants={fromBottomAnimation}
+                        custom={2}
+                  >
                         <TourCard
                               className='bigCardLeft'
                               style={{

@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 
 import './nav.css'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const Logo = styled.h3`
       h3 {

@@ -2,30 +2,55 @@ import './about.css'
 import bigpic from './Big-pic.png'
 
 import CountUp from 'react-countup'
+import { motion } from 'framer-motion'
+import { textAnimation } from '../Home/Home'
+import { fromRightAnimation } from '../Home/Home'
 
 const About = () => {
       return (
-            <section className='about'>
-                  <div className='about-images'>
+            <motion.section
+                  initial='hidden'
+                  whileInView='visible'
+                  className='about'
+            >
+                  <motion.div variants={textAnimation} className='about-images'>
                         <img src={bigpic} alt='' />
-                  </div>
+                  </motion.div>
                   <div className='about-right-content'>
-                        <div className='about-us'>About us</div>
-                        <h3 className='title'>
+                        <motion.div
+                              variants={fromRightAnimation}
+                              custom={1}
+                              className='about-us'
+                        >
+                              About us
+                        </motion.div>
+                        <motion.h3
+                              variants={fromRightAnimation}
+                              custom={1.5}
+                              className='title'
+                        >
                               Our tour plan is to fulfil your
                               <span className='dream-wish'> dream wish</span>
-                        </h3>
-                        <p className='about-text'>
+                        </motion.h3>
+                        <motion.p
+                              variants={fromRightAnimation}
+                              custom={2}
+                              className='about-text'
+                        >
                               Understand to achieve anything requires faith and
                               belief in yourself, vision, hard work,
                               determination, and dedication.
-                        </p>
-                        <div className='numbers-content'>
+                        </motion.p>
+                        <motion.div
+                              variants={fromRightAnimation}
+                              custom={3}
+                              className='numbers-content'
+                        >
                               <div className='number-one'>
                                     <div className='number'>
                                           <CountUp
                                                 enableScrollSpy
-                                                start={10}
+                                                start={5}
                                                 end={15}
                                                 duration={5}
                                           />
@@ -38,9 +63,9 @@ const About = () => {
                                     <div className='number'>
                                           <CountUp
                                                 enableScrollSpy
-                                                start={990}
+                                                start={890}
                                                 end={1000}
-                                                duration={5}
+                                                duration={8}
                                           />
                                     </div>
                                     <p className='number-text'>
@@ -53,7 +78,7 @@ const About = () => {
                                                 enableScrollSpy
                                                 end={20}
                                                 suffix='K'
-                                                duration={5}
+                                                duration={6}
                                           />
                                     </div>
                                     <p className='number-text'>
@@ -64,7 +89,7 @@ const About = () => {
                                     <div className='number'>
                                           <CountUp
                                                 enableScrollSpy
-                                                start={4}
+                                                start={3}
                                                 end={4.8}
                                                 decimals={1}
                                                 decimal='.'
@@ -75,9 +100,9 @@ const About = () => {
                                           Overall Rating
                                     </p>
                               </div>
-                        </div>
+                        </motion.div>
                   </div>
-            </section>
+            </motion.section>
       )
 }
 

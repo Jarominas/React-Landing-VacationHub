@@ -6,6 +6,9 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote'
 import Slider from 'react-slick'
 import TestimonialData from './TestimonialData.json'
+import { motion } from 'framer-motion'
+import { textAnimation } from '../Home/Home'
+import { fromRightAnimation } from '../Home/Home'
 
 import React from 'react'
 
@@ -50,15 +53,29 @@ const Testimonial = () => {
             ],
       }
       return (
-            <div className='testimonial-section' style={{}}>
+            <motion.div
+                  initial='hidden'
+                  whileInView='visible'
+                  className='testimonial-section'
+                  style={{}}
+            >
                   <div className='testimonial-text'>
-                        <p>Testimonial</p>
-                        <h2 className='title'>
+                        <motion.p variants={textAnimation}>
+                              Testimonial
+                        </motion.p>
+                        <motion.h2
+                              variants={textAnimation}
+                              custom={2}
+                              className='title'
+                        >
                               Satisfied <span>travellers</span> around the world
-                        </h2>
+                        </motion.h2>
                   </div>
 
-                  <div className='testimonial-slider'>
+                  <motion.div
+                        variants={fromRightAnimation}
+                        className='testimonial-slider'
+                  >
                         <div className='slider-content'>
                               <Slider ref={slider} {...settings}>
                                     {TestimonialData.map((testimonial) => {
@@ -103,8 +120,8 @@ const Testimonial = () => {
                         >
                               <ArrowForwardIosIcon />
                         </button>
-                  </div>
-            </div>
+                  </motion.div>
+            </motion.div>
       )
 }
 

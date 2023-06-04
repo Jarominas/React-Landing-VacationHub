@@ -6,6 +6,9 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import Slider from 'react-slick'
 import TourData from './TourCarouselData.json'
 import React from 'react'
+import { motion } from 'framer-motion'
+import { textAnimation } from '../Home/Home'
+import { fromRightAnimation } from '../Home/Home'
 
 function TourCarousel() {
       const slider = React.useRef(null)
@@ -48,16 +51,30 @@ function TourCarousel() {
             ],
       }
       return (
-            <div className='carousel-section'>
+            <motion.div
+                  initial='hidden'
+                  whileInView='visible'
+                  className='carousel-section'
+            >
                   <div className='carousel-content'>
                         <div className='carousel-text'>
-                              <p>Tour Packages</p>
-                              <h2 className='title'>
-                                    The amazing places around{' '}
+                              <motion.p variants={textAnimation}>
+                                    Tour Packages
+                              </motion.p>
+                              <motion.h2
+                                    variants={textAnimation}
+                                    custom={2}
+                                    className='title'
+                              >
+                                    The amazing places around
                                     <span>the world</span>
-                              </h2>
+                              </motion.h2>
                         </div>
-                        <div className='carousel-btn'>
+                        <motion.div
+                              variants={fromRightAnimation}
+                              custom={2}
+                              className='carousel-btn'
+                        >
                               <button
                                     onClick={() => slider?.current?.slickPrev()}
                               >
@@ -68,9 +85,12 @@ function TourCarousel() {
                               >
                                     <ArrowForwardIosIcon />
                               </button>
-                        </div>
+                        </motion.div>
                   </div>
-                  <div className='carousel-slider'>
+                  <motion.div
+                        variants={fromRightAnimation}
+                        className='carousel-slider'
+                  >
                         <Slider ref={slider} {...settings}>
                               {TourData.map((tour) => {
                                     const {
@@ -105,8 +125,8 @@ function TourCarousel() {
                                     )
                               })}
                         </Slider>
-                  </div>
-            </div>
+                  </motion.div>
+            </motion.div>
       )
 }
 export default TourCarousel
