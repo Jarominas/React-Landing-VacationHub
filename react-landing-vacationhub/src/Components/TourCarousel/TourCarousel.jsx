@@ -20,8 +20,8 @@ function TourCarousel() {
             slidesToShow: 3,
             slidesToScroll: 1,
             initialSlide: 0,
-            variableWidth: true,
-            adaptiveHeight: true,
+            variableWidth: false,
+            adaptiveHeight: false,
             arrows: false,
             responsive: [
                   {
@@ -51,30 +51,16 @@ function TourCarousel() {
             ],
       }
       return (
-            <motion.div
-                  initial='hidden'
-                  whileInView='visible'
-                  className='carousel-section'
-            >
+            <div className='carousel-section'>
                   <div className='carousel-content'>
                         <div className='carousel-text'>
-                              <motion.p variants={textAnimation}>
-                                    Tour Packages
-                              </motion.p>
-                              <motion.h2
-                                    variants={textAnimation}
-                                    custom={2}
-                                    className='title'
-                              >
+                              <p>Tour Packages</p>
+                              <h2 className='title'>
                                     The amazing places around
                                     <span>the world</span>
-                              </motion.h2>
+                              </h2>
                         </div>
-                        <motion.div
-                              variants={fromRightAnimation}
-                              custom={2}
-                              className='carousel-btn'
-                        >
+                        <div className='carousel-btn'>
                               <button
                                     onClick={() => slider?.current?.slickPrev()}
                               >
@@ -85,12 +71,9 @@ function TourCarousel() {
                               >
                                     <ArrowForwardIosIcon />
                               </button>
-                        </motion.div>
+                        </div>
                   </div>
-                  <motion.div
-                        variants={fromRightAnimation}
-                        className='carousel-slider'
-                  >
+                  <div className='carousel-slider'>
                         <Slider ref={slider} {...settings}>
                               {TourData.map((tour) => {
                                     const {
@@ -125,8 +108,8 @@ function TourCarousel() {
                                     )
                               })}
                         </Slider>
-                  </motion.div>
-            </motion.div>
+                  </div>
+            </div>
       )
 }
 export default TourCarousel
