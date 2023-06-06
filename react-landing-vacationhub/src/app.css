@@ -10,6 +10,9 @@ body {
       font-size: 20px;
       font-weight: 400;
 }
+body.responsive_nav {
+      overflow: hidden;
+}
 
 section {
       max-width: 1145px;

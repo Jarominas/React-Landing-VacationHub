@@ -1,5 +1,5 @@
 import { links } from '../../data'
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 import './nav.css'
@@ -32,6 +32,22 @@ const Navbar = () => {
       const showNavbar = () => {
             navRef.current.classList.toggle('responsive_nav')
             setIsNavOpen(!isNavOpen)
+      }
+      useEffect(() => {
+            if (isNavOpen) {
+                  navRef.current.classList.add('menu-open')
+                  disableScroll()
+            } else {
+                  navRef.current.classList.remove('menu-open')
+                  enableScroll()
+            }
+      }, [isNavOpen])
+      const disableScroll = () => {
+            document.body.style.overflow = 'hidden'
+      }
+
+      const enableScroll = () => {
+            document.body.style.overflow = 'auto'
       }
       return (
             <header>
