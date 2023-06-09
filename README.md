@@ -1,4 +1,5 @@
-<b>Responsive React Landing for practice.</b><br>
+<b>Responsive React Landing for practice.</b><br><br>
+Searchbar with data.json <br>
 Material UI<br>
 Styled Components<br>
 Framer Motion for animation
