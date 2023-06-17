@@ -4,7 +4,6 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 
 import './nav.css'
 import styled from 'styled-components'
-import { motion } from 'framer-motion'
 
 export const Logo = styled.h3`
       h3 {
@@ -33,6 +32,11 @@ const Navbar = () => {
             navRef.current.classList.toggle('responsive_nav')
             setIsNavOpen(!isNavOpen)
       }
+      const closeNavbar = () => {
+            if (isNavOpen) {
+                  showNavbar()
+            }
+      }
       useEffect(() => {
             if (isNavOpen) {
                   navRef.current.classList.add('menu-open')
@@ -49,6 +53,7 @@ const Navbar = () => {
       const enableScroll = () => {
             document.body.style.overflow = 'auto'
       }
+
       return (
             <header>
                   <Logo>Vacation Hub</Logo>
@@ -56,7 +61,12 @@ const Navbar = () => {
                         {links.map((link) => {
                               const { id, url, text } = link
                               return (
-                                    <a key={id} href={url} className='links'>
+                                    <a
+                                          key={id}
+                                          href={url}
+                                          className='links'
+                                          onClick={closeNavbar}
+                                    >
                                           {text}
                                     </a>
                               )

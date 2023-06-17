@@ -1,38 +1,38 @@
 [
-    {
-        "id": 1,
-        "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/TourCarousel/img/img-prague.png",
-        "title": "Fall in love among the winding streets and snow-covered",
-        "name": "Prague, Czechia",
-        "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/f194e8fd1803da7fa70d04eb6757c36070d26fae/react-landing-vacationhub/src/Components/TourCarousel/img/raiting.png",
-        "price": "$200",
-        "days": "10 days tour"
-    },
-    {
-        "id": 2,
-        "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/TourCarousel/img/img-benjing.png",
-        "title": "History is not about the past but a map of the past",
-        "name": "Beijing, China",
-        "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/f194e8fd1803da7fa70d04eb6757c36070d26fae/react-landing-vacationhub/src/Components/TourCarousel/img/raiting.png",
-        "price": "$450",
-        "days": "5 days tour"
-    },
-    {
-        "id": 3,
-        "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/TourCarousel/img/img-istambul.png",
-        "title": "The unique character as a symbol of taste and ostentation",
-        "name": "İstanbul, Turkey",
-        "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/f194e8fd1803da7fa70d04eb6757c36070d26fae/react-landing-vacationhub/src/Components/TourCarousel/img/raiting.png",
-        "price": "$150",
-        "days": "7 days tour"
-    },
-    {
-        "id": 4,
-        "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/f194e8fd1803da7fa70d04eb6757c36070d26fae/react-landing-vacationhub/src/Components/TourCarousel/img/img-paris.png",
-        "title": "You don't want to pitch a tent and live inside the Louvre",
-        "name": "Paris, France",
-        "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/f194e8fd1803da7fa70d04eb6757c36070d26fae/react-landing-vacationhub/src/Components/TourCarousel/img/raiting.png",
-        "price": "$100",
-        "days": "10 days tour"
-    }
+      {
+            "id": 1,
+            "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/TourCarousel/img/img-prague.png",
+            "title": "Fall in love among the winding streets and snow-covered",
+            "name": "Prague, Czechia",
+            "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/f194e8fd1803da7fa70d04eb6757c36070d26fae/react-landing-vacationhub/src/Components/TourCarousel/img/raiting.png",
+            "price": "$200",
+            "days": "10 days tour"
+      },
+      {
+            "id": 2,
+            "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/TourCarousel/img/img-benjing.png",
+            "title": "History is not about the past but a map of the past and future",
+            "name": "Beijing, China",
+            "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/f194e8fd1803da7fa70d04eb6757c36070d26fae/react-landing-vacationhub/src/Components/TourCarousel/img/raiting.png",
+            "price": "$450",
+            "days": "5 days tour"
+      },
+      {
+            "id": 3,
+            "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/main/react-landing-vacationhub/src/Components/TourCarousel/img/img-istambul.png",
+            "title": "The unique character as a symbol of taste and ostentation",
+            "name": "İstanbul, Turkey",
+            "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/f194e8fd1803da7fa70d04eb6757c36070d26fae/react-landing-vacationhub/src/Components/TourCarousel/img/raiting.png",
+            "price": "$150",
+            "days": "7 days tour"
+      },
+      {
+            "id": 4,
+            "img": "https://raw.githubusercontent.com/Jarominas/React-Projects/f194e8fd1803da7fa70d04eb6757c36070d26fae/react-landing-vacationhub/src/Components/TourCarousel/img/img-paris.png",
+            "title": "You don't want to pitch a tent and live inside the Louvre",
+            "name": "Paris, France",
+            "raiting": "https://raw.githubusercontent.com/Jarominas/React-Projects/f194e8fd1803da7fa70d04eb6757c36070d26fae/react-landing-vacationhub/src/Components/TourCarousel/img/raiting.png",
+            "price": "$100",
+            "days": "10 days tour"
+      }
 ]

@@ -6,9 +6,6 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import Slider from 'react-slick'
 import TourData from './TourCarouselData.json'
 import React from 'react'
-import { motion } from 'framer-motion'
-import { textAnimation } from '../Home/Home'
-import { fromRightAnimation } from '../Home/Home'
 
 function TourCarousel() {
       const slider = React.useRef(null)
@@ -51,7 +48,7 @@ function TourCarousel() {
             ],
       }
       return (
-            <div className='carousel-section'>
+            <div className='carousel-section' id='services'>
                   <div className='carousel-content'>
                         <div className='carousel-text'>
                               <p>Tour Packages</p>

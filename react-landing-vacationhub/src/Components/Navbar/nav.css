@@ -1,12 +1,14 @@
 header {
       display: flex;
-
+      position: sticky;
+      top: 0;
       align-items: center;
       justify-content: space-between;
       height: 5rem;
       padding: 0 2rem;
       background-color: #ffffff;
       color: #808080;
+      z-index: 101;
 }
 header h3 {
       color: #112b3c;
@@ -73,7 +75,7 @@ header .nav-btn {
             align-items: center;
             justify-content: center;
             gap: 1.5rem;
-            margin-top: 1rem;
+            /* margin-top: 1rem; */
             top: 0;
             left: 0;
             height: 100vh;

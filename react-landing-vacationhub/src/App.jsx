@@ -10,7 +10,7 @@ import Footer from './Components/Footer/Footer'
 function App() {
       return (
             <>
-                  <Navbar />
+                  <Navbar id='1' />
                   <Home />
                   <About />
                   <TourCarousel />

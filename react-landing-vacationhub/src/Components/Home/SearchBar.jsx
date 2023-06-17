@@ -15,7 +15,7 @@ const SearchBar = React.forwardRef((props, ref) => {
             const searchWord = event.target.value
             setWordEntered(searchWord)
             const newFilter = data.filter((value) => {
-                  return value.name
+                  return value.country
                         .toLowerCase()
                         .includes(searchWord.toLowerCase())
             })
@@ -53,15 +53,17 @@ const SearchBar = React.forwardRef((props, ref) => {
                   </div>
                   {filteredData.length != 0 && (
                         <div className='dataResult'>
-                              {filteredData.slice(0, 15).map((country) => {
-                                    const { id, name, img } = country
+                              {filteredData.slice(0, 15).map((item) => {
+                                    const { country, city, id, img } = item
                                     return (
                                           <a
                                                 href={img}
                                                 key={id}
                                                 className='dataItem'
                                           >
-                                                <p>{name}</p>
+                                                <p>
+                                                      {country}, {city}
+                                                </p>
                                           </a>
                                     )
                               })}

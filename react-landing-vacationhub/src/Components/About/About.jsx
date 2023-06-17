@@ -9,6 +9,7 @@ import { fromRightAnimation } from '../Home/Home'
 const About = () => {
       return (
             <motion.section
+                  id='about'
                   initial='hidden'
                   whileInView='visible'
                   className='about'

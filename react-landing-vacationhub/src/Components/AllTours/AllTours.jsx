@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import amsterdam from './img/amsterdam.png'
 import paris1 from './img/paris1.png'
@@ -6,7 +5,6 @@ import paris2 from './img/paris2.png'
 import portugal from './img/portugal.png'
 import { motion } from 'framer-motion'
 import { textAnimation } from '../Home/Home'
-import { fromRightAnimation } from '../Home/Home'
 
 const fromBottomAnimation = {
       hidden: {
@@ -26,7 +24,8 @@ const fromBottomAnimation = {
 const Section = styled(motion.section)`
       max-width: 1145px;
       margin: 0 auto;
-      margin-top: 5em;
+      margin-top: 10em;
+      padding-top: 3rem;
       text-align: center;
 
       p {
@@ -122,7 +121,12 @@ const TourCard = styled.div`
 `
 const AllTours = () => {
       return (
-            <Section as={motion.section} initial='hidden' whileInView='visible'>
+            <Section
+                  id='price'
+                  as={motion.section}
+                  initial='hidden'
+                  whileInView='visible'
+            >
                   <Title as={motion.h2} variants={textAnimation}>
                         We can do anything we want to if <span>we stick</span>
                         to it long enough.

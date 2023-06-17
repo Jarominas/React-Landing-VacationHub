@@ -77,7 +77,7 @@ const SearchBar = () => {
 const Footer = () => {
       return (
             <section>
-                  <FooterContainer>
+                  <FooterContainer id='contact'>
                         <Adress>
                               <Logo
                                     style={{

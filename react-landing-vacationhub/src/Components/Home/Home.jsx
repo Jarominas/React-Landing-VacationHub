@@ -38,6 +38,7 @@ export const fromRightAnimation = {
 const Home = () => {
       return (
             <motion.section
+                  id='#'
                   initial='hidden'
                   whileInView='visible'
                   className='home'
